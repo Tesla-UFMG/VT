@@ -1,0 +1,88 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   10 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "Temp2"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:5819:268-273"\
+    }\
+    ChartData {\
+      Name         "Diam2"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:5819:285-290"\
+    }\
+    ChartData {\
+      Name         "DistA"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:5819:302-307"\
+    }\
+    ChartData {\
+      Name         "DistA1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:5819:319-325"\
+    }\
+    ChartData {\
+      Name         "AngleA1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:5819:337-344"\
+    }\
+    ChartData {\
+      Name         "DistB1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:5819:356-362"\
+    }\
+    ChartData {\
+      Name         "AngleB1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:5819:374-381"\
+    }\
+    ChartData {\
+      Name         "endA1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:5819:393-398"\
+    }\
+    ChartData {\
+      Name         "endB1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:5819:410-415"\
+    }\
+    ChartData {\
+      Name         "Start"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:5819:427-432"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

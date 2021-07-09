@@ -1,0 +1,60 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   6 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "Temp2"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:6272:217-222"\
+    }\
+    ChartData {\
+      Name         "R2"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:6272:249-251"\
+    }\
+    ChartData {\
+      Name         "DistA"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:6272:264-269"\
+    }\
+    ChartData {\
+      Name         "DistB"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:6272:281-286"\
+    }\
+    ChartData {\
+      Name         "endB1"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:6272:315-320"\
+    }\
+    ChartData {\
+      Name         "Start"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "ContoleLateralApplication:6272:332-337"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
