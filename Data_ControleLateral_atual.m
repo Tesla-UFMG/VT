@@ -37,11 +37,6 @@ GND.Friction = ones(4,1).*2.5;
 TME.Simulation = 16;
 
 %%
-CTRL.Kp = 0;%130
-CTRL.Ki = 0;%120
-CTRL.Kd = 0;%0;
-
-%%
 
 %Adições:
 
@@ -55,10 +50,6 @@ STEER.Left =            [-0.599520598	-0.486772328	-0.380132711	-0.279          
 SENSOR.SteerAvg =       (STEER.Right + STEER.Left)/2;
 SENSOR.APPSAcionado =   [0 20 40 60 80 100];
 SENSOR.APPS1 =          [0.36 0.57 1.3 2.75 3.92 4.29];
-
-CTRL.P =                [20 15 5 2 0 2 5 15 20];
-CTRL.I =                [120 90 10 5 0 5 10 90 120];
-CTRL.Angles =           [-pi/3 -pi/4 -pi/5 -pi/8 0 pi/8 pi/5 pi/4 pi/3];
 
 %%
 %Asphalt, dry
